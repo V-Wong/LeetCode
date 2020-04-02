@@ -43,3 +43,52 @@ def search(self, nums: List[int], target: int) -> int:
             return -1
 
         return helper(nums, 0, len(nums) - 1, target)
+
+
+def search2(self, nums: List[int], target: int) -> int:
+    """
+    We first perform a modified binary search to find the rotation value.
+    This rotation amount then splits the array into two sorted subarrays.
+    We then perform a standard binary search on either of these subarrays
+    to find the desired element.
+    """
+
+    def find_rotation_value(nums: List[int], low: int, high: int):
+        """
+        Finding the rotation value is equivalent to finding the smallest element.
+        """
+
+        mid = (low + high) // 2
+        # Our search has reduced to one element
+        # This element must be the smallest element
+        if low == mid == high:
+            return mid
+        # Smallest element lies in nums[mid + 1]..nums[high]
+        elif nums[mid] > nums[high]:
+            return find_rotation_value(nums, mid + 1, high)
+        # Smallest element lies in nums[low]..nums[mid]
+        # Note that this goes up to nums[mid] and not nums[mid - 1]
+        # nums[mid] may be the smallest element, but this needs to be verified
+        else:
+            return find_rotation_value(nums, low, mid)
+                
+    def binary_search(nums: List[int], low: int, high: int, target: int):
+        if low <= high:
+            mid = (low + high) // 2
+            if nums[mid] == target:
+                return mid
+            elif nums[mid] < target:
+                return binary_search(nums, mid + 1, high, target)
+            else:
+                return binary_search(nums, low, mid - 1, target)
+        else:
+            return -1
+
+    if nums:
+        rotation_value = find_rotation_value(nums, 0, len(nums) - 1)
+        if nums[rotation_value] <= target <= nums[len(nums) - 1]:
+            return binary_search(nums, rotation_value, len(nums) - 1, target)
+        else:
+            return binary_search(nums, 0, rotation_value, target)
+    else:
+        return -1
