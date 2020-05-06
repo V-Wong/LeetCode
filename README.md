@@ -1,5 +1,5 @@
 # LeetCode-Practice
-A repository of my solutions to various LeetCode problems with solutions.
+Solutions and explanations to a variety of LeetCode problems written in Python.
 
 ## Divide and Conquer
 - [First Bad Version](https://github.com/V-Wong/LeetCode-Practice/blob/master/Divide%20and%20Conquer/first_bad_version.py)
