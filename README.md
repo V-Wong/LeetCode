@@ -18,3 +18,7 @@ Solutions and explanations to a variety of LeetCode problems written in Python.
 ## Graph
 - [Flood Fill](https://github.com/V-Wong/LeetCode-Practice/blob/master/Graph/flood_fill.py)
 - [Island Perimeter](https://github.com/V-Wong/LeetCode-Practice/blob/master/Graph/island_perimeter.py)
+- [Max Area of Island](https://github.com/V-Wong/LeetCode-Practice/blob/master/Graph/max_area_island.py)
+
+## Math
+- [Valid Square](https://github.com/V-Wong/LeetCode-Practice/blob/master/Math/valid_square.py)
