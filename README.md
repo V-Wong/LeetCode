@@ -14,3 +14,7 @@ Solutions and explanations to a variety of LeetCode problems written in Python.
 - [Min Cost Climbing Stairs](https://github.com/V-Wong/LeetCode-Practice/blob/master/Dynamic%20Programming/min_cost_climb_stairs.py)
 - [Palindromic Substrings](https://github.com/V-Wong/LeetCode-Practice/blob/master/Dynamic%20Programming/palindromic_substrings.py)
 - [Longest Palindromic Substring](https://github.com/V-Wong/LeetCode-Practice/blob/master/Dynamic%20Programming/longest_palindromic_substring.py)
+
+## Graph
+- [Flood Fill](https://github.com/V-Wong/LeetCode-Practice/blob/master/Graph/flood_fill.py)
+- [Island Perimeter](https://github.com/V-Wong/LeetCode-Practice/blob/master/Graph/island_perimeter.py)
