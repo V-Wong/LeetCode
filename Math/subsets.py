@@ -30,3 +30,24 @@ class Solution:
             return includeCur + excludeCur
 
         return helper(nums, [])
+
+
+class AlternativeSolutions:
+    def subsets(self, nums: List[int]) -> List[List[int]]:
+        """
+        We can represent every subset as a bitstring from 
+        0 to 2 ** len(nums) - 1 where 0 denotes absence of 
+        the given element, and 1 denotes the presence
+        of the given element.
+        """
+        
+        powerset = []
+        
+        for i in range(2 ** len(nums)):
+            curSet = []
+            for j in range(len(nums)):
+                if i & (1 << j):
+                    curSet.append(nums[j])
+            powerset.append(curSet)
+            
+        return powerset
