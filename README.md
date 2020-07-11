@@ -20,5 +20,12 @@ Solutions and explanations to a variety of LeetCode problems written in Python.
 - [Island Perimeter](https://github.com/V-Wong/LeetCode-Practice/blob/master/Graph/island_perimeter.py)
 - [Max Area of Island](https://github.com/V-Wong/LeetCode-Practice/blob/master/Graph/max_area_island.py)
 
+## Linked List
+- [Flatten a Multilevel Doubly Linked List](https://github.com/V-Wong/LeetCode-Practice/blob/master/Linked%20List/flatten_dll.py)
+
 ## Math
 - [Valid Square](https://github.com/V-Wong/LeetCode-Practice/blob/master/Math/valid_square.py)
+
+
+## Tree
+- [Maximum Width of Binary Tree](https://github.com/V-Wong/LeetCode-Practice/blob/master/Tree/maximum_width.py)
